@@ -106,3 +106,8 @@ using namespace std; // so i dont have to use std:: everytime
         cout<<r->key<<" ";
         inorder(r->right);
     }
+
+    void preorder(AVLNode* r)
+    {
+        if (!r) return;
+    }
