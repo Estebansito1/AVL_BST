@@ -110,5 +110,52 @@ using namespace std; // so i dont have to use std:: everytime
     void preorder(AVLNode* r)
     {
         if (!r) return;
+        cout<<r->key<<" ";
+        preorder(r->left);
+        preorder(r->right);
+    }
+
+// the main program
+    int main()
+    {
+        int vals[5] = {50,30,70,20,40};
+        AVLNode* root = nullptr;
+        for (int v : vals) root= insertAVL(root, v);
+
+        cout<<"AVL inorder, sorted : "; inorder(root); cout<<"\n";
+        cout<<"AVL preorder : "; preorder(root); cout<<"\n";
+        cout<<"AVL height : " << h(root) << "\n";
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
