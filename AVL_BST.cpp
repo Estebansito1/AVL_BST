@@ -110,4 +110,5 @@ using namespace std; // so i dont have to use std:: everytime
     void preorder(AVLNode* r)
     {
         if (!r) return;
+
     }
